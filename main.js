@@ -7,6 +7,7 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, 'todo-icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -14,6 +15,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
+  
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
