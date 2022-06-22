@@ -1,3 +1,129 @@
-/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Add styles here to customize the appearance of your app */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #555555;
+}
+
+body {
+  background-color: black;
+}
+
+#app {
+  max-width: 500px;
+  height: 60vh;
+  margin: 10vh auto 10vh auto;
+  border: solid 1px white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top:  10vh;
+}
+
+#list {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#container {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 20px;
+  background-color: black;
+  border-top: solid 1px white;
+}
+
+input {
+  width: 70%;
+  height: 35px;
+  padding: 5px;
+  background-color: #eeeeee;
+  outline: none;
+  border: none;
+  font-size: 22px;
+}
+
+#addButton {
+  width: 30%;
+  height: 35px;
+  padding: 5px 10px 5px 10px;
+  font-size: 22px;
+}
+
+li {
+  max-width: 500px;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  background-color: #555555;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 0 10px 0 10px;
+  border: none;
+  height: 100%;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all ease 300ms;
+  font-weight: bolder;
+  outline: none;
+}
+
+button:hover {
+  background-color: #aaaaaa;
+}
+
+button:active {
+  background-color: #888888;
+}
+
+#removeButton {
+  width: 20%;
+}
+
+span {
+  width: 100%;
+  display: block;
+  text-indent: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  #addButton {
+    height: 35px;
+    font-size: 25px;
+  }
+  input {
+    height: 35px;
+    font-size: 25px;
+  }
+}
